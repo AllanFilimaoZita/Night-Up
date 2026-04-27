@@ -4,7 +4,17 @@ function App() {
 
   return (
     <>
-      <h1>Tela de Login teste</h1>
+      <h1>Login</h1>
+
+      <form className="form">
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" />
+
+        <label htmlFor="password">Password</label>
+        <input type="password" id="password" />
+
+        <button type="button">Entrar</button>
+      </form>
     </>
   )
 }
