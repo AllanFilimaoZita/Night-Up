@@ -53,7 +53,7 @@ function LoginForm() {
                 </div>
 
                 <div className="recover">
-                  <a href="#">Repor palavra passe</a>
+                  <a className="hover:text-[#d9d3e17f]  " href="#">Repor palavra passe</a>
                 </div>
               </div>
 
