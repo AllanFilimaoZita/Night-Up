@@ -62,7 +62,7 @@ function LoginForm() {
         </div>
         <div className="pb-10 pt-5 px-4 w-screen  justify-center items-center ">
           <input
-            className="bg-[#6A00FF]    rounded-full p-4 w-full "
+            className="bg-[#6A00FF]  cursor-pointer hover:bg-[#6a00ff7f] transition  rounded-full p-4 w-full "
             type="button"
             value="Iniciar Sessão"
           />
