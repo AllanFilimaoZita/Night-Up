@@ -86,7 +86,7 @@ function LoginForm() {
         <div className="no-account">
           <p>
             Ainda não tens conta?{" "}
-            <a className="text-[#6A00FF] " href="#">
+            <a className="text-[#6A00FF] hover:text-[#d9d3e17f] transition" href="#">
               Criar Conta
             </a>
           </p>
