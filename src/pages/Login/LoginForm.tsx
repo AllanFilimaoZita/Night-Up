@@ -9,10 +9,10 @@ import BackButton from "../../components/BackButton";
 function LoginForm() {
   return (
     <>
-<BackButton />
-   
+      <BackButton />
+
       <div className=" bg-black min-h-screen px-4 flex flex-col justify-center items-center text-white">
-           
+
         <div className=" bg">
           <h1 className="text-[30px] pb-4">Login</h1>
         </div>
@@ -20,38 +20,38 @@ function LoginForm() {
           <div className="">
             <form className="flex flex-col gap-2 ">
 
-                <div className="relative  flex  flex-col gap-3" >
-                    <HiOutlineMail size={26} className=" absolute left-3 top-4" />
+              <div className="relative  flex  flex-col gap-3" >
+                <HiOutlineMail size={26} className=" absolute left-3 top-4" />
 
-                    <input
-                className="border-2 border-[#6F6F6F]  w-full rounded-lg p-4 pl-12"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="ex:webdevstar@gmail.com"
-            
-              />
+                <input
+                  className="border-2 border-[#6F6F6F]  w-full rounded-lg p-4 pl-12"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="ex:webdevstar@gmail.com"
+
+                />
 
                 <div className="relative w-full">
-                    <IoKeyOutline size={24}  className="absolute left-3 top-4"/>
+                  <IoKeyOutline size={24} className="absolute left-3 top-4" />
 
 
-                     <input
-                className="border-2 border-[#6F6F6F] w-full rounded-lg p-4 pl-12"
-                type="password"
-                id="password"
-                placeholder="*************"
-              />
-
-                
-              
-              <div>
+                  <input
+                    className="border-2 border-[#6F6F6F] w-full rounded-lg p-4 pl-12"
+                    type="password"
+                    id="password"
+                    placeholder="*************"
+                  />
 
 
+
+                  <div>
+
+
+                  </div>
+                </div>
               </div>
-              </div>
-              </div>
-             
+
               <div className="flex justify-between pb-5 pt-3">
                 <div className="flex gap-2 justify-center items-center">
                   <input className="size-4" type="checkbox" name="forget" id="forget" />
