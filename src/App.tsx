@@ -1,21 +1,26 @@
-import './App.css'
-import './index.css'
-import Header from './components/Header'
-// import LoginForm from './pages/Login/LoginForm'
-// import Eventdetails from './pages/Login/event-details'
-import  NavBar  from "./components/NavBar";
-import Home from './pages/Home/Home'
+// App.tsx
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import "./App.css";
+import "./index.css";
+
+// Componentes
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+
+// Páginas
+import Home from "./pages/Home/Home";
 
 function App() {
-
   return (
-    <>
-      <Header></Header>
-      <Home></Home>
-      <NavBar></NavBar>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <NavBar />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

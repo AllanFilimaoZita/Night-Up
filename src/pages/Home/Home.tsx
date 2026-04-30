@@ -149,6 +149,7 @@ function Home() {
           {filteredEvents.map((event) => (
             <li key={event.id}>
               <EventCard
+                id={event.id}
                 image={event.image}
                 title={event.title}
                 location={event.location}

@@ -1,5 +1,8 @@
 // components/EventCard/index.tsx
 
+// Routing
+import { useNavigate } from "react-router-dom";
+
 // Ícones
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
@@ -7,6 +10,7 @@ import { HiOutlineTicket } from "react-icons/hi";
 
 // Tipos
 export interface EventCardProps {
+  id: number;
   image: string;
   title: string;
   location: string;
@@ -35,6 +39,7 @@ function EventMetaItem({ icon, label, ariaLabel }: EventMetaItemProps) {
 
 // Componente principal
 function EventCard({
+  id,
   image,
   title,
   location,
@@ -42,14 +47,19 @@ function EventCard({
   date,
   className = "",
 }: EventCardProps) {
+  const navigate = useNavigate();
+
   return (
     <article
-      className={`mx-auto max-w-md overflow-hidden rounded-3xl bg-white shadow-2xl ${className}`}
+      onClick={() => navigate(`/event/${id}`)}
+      role="button"
+      aria-label={`Ver detalhes de ${title}`}
+      className={`mx-auto max-w-md cursor-pointer overflow-hidden rounded-3xl bg-white shadow-2xl transition-shadow hover:shadow-xl ${className}`}
     >
       <img
         src={image}
         alt={title}
-        className="h-[210px] w-full object-cover p-4 sm:h-[192px] sm:p-5"
+        className="`h-[210px]` w-full object-cover p-4 `sm:h-[192px]` sm:p-5"
       />
 
       <div className="space-y-6 p-10">
