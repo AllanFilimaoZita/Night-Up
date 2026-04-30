@@ -1,7 +1,8 @@
 import './App.css'
 import './index.css'
-import './pages/login/LoginForm'
-import LoginForm from './pages/login/LoginForm'
+import LoginForm from './pages/Login/LoginForm'
+import Eventdetails from './pages/Login/event-details'
+import  NavBar  from "./components/NavBar";
 
 
 
@@ -9,7 +10,9 @@ function App() {
 
   return (
     <>
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <Eventdetails />
+      <NavBar />
     </>
   )
 }
