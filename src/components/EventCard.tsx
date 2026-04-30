@@ -1,72 +1,85 @@
-import React from 'react';
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { HiOutlineTicket } from "react-icons/hi";
-import { FiMapPin } from "react-icons/fi";
+// components/EventCard/index.tsx
 
-interface MasterClassCardProps {
+// Ícones
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
+import { HiOutlineTicket } from "react-icons/hi";
+
+// Tipos
+export interface EventCardProps {
   image: string;
   title: string;
   location: string;
   price: string;
   date: string;
-  className?: string; // Para customizações adicionais
+  className?: string;
 }
 
-const MasterClassCard: React.FC<MasterClassCardProps> = ({
+// Subcomponente: linha de metadado (ícone + texto)
+interface EventMetaItemProps {
+  icon: React.ReactNode;
+  label: string;
+  ariaLabel: string;
+}
+
+function EventMetaItem({ icon, label, ariaLabel }: EventMetaItemProps) {
+  return (
+    <div className="flex items-center gap-3" aria-label={ariaLabel}>
+      <span className="text-gray-500" aria-hidden="true">
+        {icon}
+      </span>
+      <p className="text-sm font-semibold text-gray-700">{label}</p>
+    </div>
+  );
+}
+
+// Componente principal
+function EventCard({
   image,
   title,
   location,
   price,
   date,
   className = "",
-}) => {
+}: EventCardProps) {
   return (
-    <div className={`max-w-md mx-auto bg-white rounded-3xl overflow-hidden shadow-2xl ${className}`}>
-      
-      {/* === PARTE SUPERIOR - IMAGEM === */}
-      <div className="relative">
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-[380px] object-cover"
-        />
-      </div>
+    <article
+      className={`mx-auto max-w-md overflow-hidden rounded-3xl bg-white shadow-2xl ${className}`}
+    >
+      <img
+        src={image}
+        alt={title}
+        className="h-[210px] w-full object-cover p-4 sm:h-[192px] sm:p-5"
+      />
 
-      {/* === PARTE INFERIOR - INFORMAÇÕES === */}
-      <div className="p-6 space-y-6">
-        <h2 className="text-2xl font-bold text-gray-900 leading-tight">
+      <div className="space-y-6 p-10">
+        <h2 className="text-xl font-bold leading-tight text-gray-900">
           {title}
         </h2>
 
-        <div className="space-y-5 text-gray-700">
-          {/* Local + Preço na mesma linha */}
-          <div className="flex justify-between items-start gap-4">
-            <div className="flex items-center gap-3">
-              <span className="text-3xl text-gray-600"><FiMapPin /></span>
-              <div>
-                <p className="font-semibold">{location}</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-3xl text-gray-600"><HiOutlineTicket /></span>
-              <div>
-                <p className="font-semibold">{price}</p>
-              </div>
-            </div>
+        <div className="space-y-4">
+          <div className="flex items-start justify-between gap-4">
+            <EventMetaItem
+              icon={<FiMapPin size={24} />}
+              label={location}
+              ariaLabel={`Local: ${location}`}
+            />
+            <EventMetaItem
+              icon={<HiOutlineTicket size={24} />}
+              label={price}
+              ariaLabel={`Preço: ${price}`}
+            />
           </div>
 
-          {/* Data */}
-          <div className="flex items-center gap-3">
-            <span className="text-3xl text-gray-600"><FaRegCalendarAlt /></span>
-            <div>
-              <p className="font-semibold">{date}</p>
-            </div>
-          </div>
+          <EventMetaItem
+            icon={<FaRegCalendarAlt size={24} />}
+            label={date}
+            ariaLabel={`Data: ${date}`}
+          />
         </div>
       </div>
-    </div>
+    </article>
   );
-};
+}
 
-export default MasterClassCard;
+export default EventCard;
