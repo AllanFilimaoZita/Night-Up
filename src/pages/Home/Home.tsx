@@ -23,10 +23,6 @@ function Home() {
                         ver todos
                     </a>
                 </div>
-
-                <div>
-                    
-                </div>
             </section>
         </main>
 
