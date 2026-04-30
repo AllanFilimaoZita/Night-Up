@@ -2,7 +2,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoKeyOutline } from "react-icons/io5";
-import BackButton from "../components/BackButton";
+import BackButton from "../../components/BackButton";
 
 
 
