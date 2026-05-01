@@ -85,7 +85,7 @@ function EventDetails() {
                   src={cover}
                   alt="Kabza de Small "
                 />
-                <span className="text-xs">Kabza de Small</span>
+                <span className="text-xs text-center">Kabza de Small</span>
               </div>
               <div className="">
                 <img
