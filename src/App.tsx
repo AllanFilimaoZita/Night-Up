@@ -1,7 +1,7 @@
 import './App.css'
 import './index.css'
 import LoginForm from './pages/Login/LoginForm'
-import Eventdetails from './pages/Login/event-details'
+import Eventdetails from './pages/detalhes/event-details'
 
 
 
