@@ -51,7 +51,7 @@ function EventDetails() {
 
             <p className="text-justify font-light text-sm">
               Conduzida por Stélio Mondlane, também conhecido
-              como TheDrummerBeast, esta aula especial irá abordar técnicas
+              como TheDrummerBeast, esta aula especial irá abordar técnicas
               essenciais, coordenação, criatividade rítmica, performance ao vivo
               e dicas práticas para evolução no instrumento.
             </p>
