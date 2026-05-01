@@ -6,7 +6,7 @@ function Header () {
 
     return (
 
-        <header className="w-full px-4 py-3 sm:px-6 sm:py-4">
+        <header className="w-full px-4 pt-7 sm:px-6 sm:py-4">
             <div className="flex flex-row items-center justify-between">
 
                 <div>
