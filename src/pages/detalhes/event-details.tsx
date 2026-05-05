@@ -1,5 +1,3 @@
-import Header from "../../components/Header";
-import NavBar from "../../components/NavBar";
 import imagem from "../../assets/img/capa2.jpeg";
 import cover from "../../assets/img/img.png";
 import brand from "../../assets/img/brand.jpeg";
@@ -12,8 +10,7 @@ import { GoInfo } from "react-icons/go";
 function EventDetails() {
   return (
     <>
-      <Header />
-      <NavBar />
+      
 
       <div className=" w-screen h-screen flex flex-col items-center justify-start">
         <div className=" w-full w-screen h-[300px] ">
