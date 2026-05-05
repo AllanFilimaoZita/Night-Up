@@ -13,7 +13,7 @@ import { TriangleAlert } from "lucide-react";
 
 
 
-function profile () {
+function profile() {
 
   return (
     <>
@@ -27,12 +27,12 @@ function profile () {
 
         <h3>Perfil</h3>
 
-        
+
         <span></span>
 
 
       </header>
-        {/*  */}
+      {/*  */}
       <section className='profile-info'>
 
         <img src={Perfil} alt="fto" />
@@ -47,61 +47,61 @@ function profile () {
 
 
       </section>
-        {/*  */}
+      {/*  */}
 
 
 
-        {/*  */}
+      {/*  */}
 
 
-          <h4>Dados da conta</h4>
-        <section className='Dados-conta'>
+      <h4>Dados da conta</h4>
+      <section className='Dados-conta'>
 
-          <div className="dado">
-            
-              <CircleUser size={30} /><a href=""> Gerir Perfil</a>
-              
-              
-              </div>
-          <hr />
+        <div className="dado">
 
-          
-          <div className="dado"> <Lock size={30} /> <a href=""> Senha da Conta</a> </div>
-          <hr />
-          <div className="dado"> <FaRegBell size={30} /><a href="">Notificacoes</a></div>
-          <hr />
-          <div className="dado"> <FaLanguage size={30} /><a href="">Idioma</a></div>
-          <hr />
-      
-
-  
-        </section>
-          {/*  */}
-          {/*  */}
-          <h4>Suporte (Help & Support)</h4>
-        <section className='Suporte' >
-          <div className="dado"><Headphones size={30} /> <a href="">Central de Ajuda</a></div>
-          <hr />
-          <div className="dado"><HelpCircle size={30} /><a href="">Perguntas frequentes</a>  </div>
-          <hr />
-
-          <div className="dado"><TriangleAlert size={30} /><a href="">Reportar problema</a></div>
-          <hr />
-          <div className="dado"> <MessageCircleMore size={30}/><a href="">Feedback / Sugestoes</a></div>
-          <hr />
+          <CircleUser size={30} /><a href=""> Gerir Perfil</a>
 
 
-        </section>
-          {/*  */}
-      
+        </div>
+        <hr />
 
 
-  
+        <div className="dado"> <Lock size={30} /> <a href=""> Senha da Conta</a> </div>
+        <hr />
+        <div className="dado"> <FaRegBell size={30} /><a href="">Notificacoes</a></div>
+        <hr />
+        <div className="dado"> <FaLanguage size={30} /><a href="">Idioma</a></div>
+        <hr />
 
 
 
-      
-      
+      </section>
+      {/*  */}
+      {/*  */}
+      <h4>Suporte (Help & Support)</h4>
+      <section className='Suporte' >
+        <div className="dado"><Headphones size={30} /> <a href="">Central de Ajuda</a></div>
+        <hr />
+        <div className="dado"><HelpCircle size={30} /><a href="">Perguntas frequentes</a>  </div>
+        <hr />
+
+        <div className="dado"><TriangleAlert size={30} /><a href="">Reportar problema</a></div>
+        <hr />
+        <div className="dado"> <MessageCircleMore size={30} /><a href="">Feedback / Sugestoes</a></div>
+        <hr />
+
+
+      </section>
+      {/*  */}
+
+
+
+
+
+
+
+
+
     </>
   )
 }
