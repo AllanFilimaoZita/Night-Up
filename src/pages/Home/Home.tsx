@@ -1,25 +1,17 @@
-// pages/Home/index.tsx
-
-// React
 import { useCallback, useState } from "react";
 
-// Ícones
 import { CiSearch } from "react-icons/ci";
 import { PiSlidersHorizontalDuotone } from "react-icons/pi";
 
-// Componentes
 import EventCard, { type EventCardProps } from "../../components/EventCard";
 
-// Assets
 import capa1 from "../../assets/img/capa1.png";
 import capa2 from "../../assets/img/capa2.png";
 import capa3 from "../../assets/img/capa3.png";
 import capa4 from "../../assets/img/capa4.png";
 
-// Tipos
 type Event = EventCardProps & { id: number };
 
-// Dados mockados (mover para: src/data/events.ts)
 const MOCK_EVENTS: Event[] = [
   {
     id: 1,
@@ -55,7 +47,6 @@ const MOCK_EVENTS: Event[] = [
   },
 ];
 
-// Subcomponente: SearchBar
 interface SearchBarProps {
   value: string;
   onChange: (value: string) => void;
@@ -93,7 +84,6 @@ function SearchBar({ value, onChange, onFilterClick }: SearchBarProps) {
   );
 }
 
-// Subcomponente: SectionHeader
 interface SectionHeaderProps {
   title: string;
   linkLabel: string;
@@ -114,7 +104,6 @@ function SectionHeader({ title, linkLabel, onLinkClick }: SectionHeaderProps) {
   );
 }
 
-// Componente principal
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
