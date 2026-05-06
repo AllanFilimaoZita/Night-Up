@@ -1,0 +1,66 @@
+.notification{
+    display: flex;
+    align-items: center;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+   /*  justify-content: space-between; */
+    gap: 12px;
+    border: 1px solid #cccccc;
+}
+.notification_conteudo{
+    flex: 1;
+}
+button{
+    border: 1px solid #666666;
+    border-radius: 6px;
+}
+.Notificação{
+    background: transparent;
+    color: #cccccc;
+    padding: 14px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+.notification_label{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    display: block;
+    margin-bottom: 3px;
+}
+.notification_icone{
+    flex-shrink: 0;
+}
+.notification_mensagem{
+    font-size: 13px;
+    color: #232323;
+    margin: 0;
+    line-height: 1.4;
+}
+.notification_fechar{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+.notifications{
+    position: relative;
+    padding: 4px 36px 10px 12px;
+    border: 1px solid #ebe6e6;
+    border-radius: 4px;
+    background-color: #f5f5f5d1;
+}
