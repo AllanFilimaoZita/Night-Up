@@ -1,5 +1,8 @@
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+
 
 
 function Header () {
@@ -17,9 +20,13 @@ function Header () {
                     <button className="text-zinc-500 active:scale-90 transition-all duration-200 p-1">
                         <FaRegUserCircle size={24} />
                     </button>
+
+                    <Link to ="./favorites">
                     <button className="text-zinc-500 active:scale-90 transition-all duration-200 p-1">
                         <FaRegHeart size={22} />
                     </button>
+
+                    </Link>
                 </div>
 
             </div>
