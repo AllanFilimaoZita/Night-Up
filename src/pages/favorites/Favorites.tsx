@@ -19,7 +19,7 @@ function Favorites() {
             <h4 className="text-lg font-bold">Lista de Favoritos</h4>
           </div>
         </div>
-        <div className="justify-between flex items-center gap-2 relative">
+        <div className="justify-between flex items-center gap-2git relative">
           <div className="absolute left-4 top-1/2 -translate-y-1/2">
             <CiSearch size={20} className="text-black" />
           </div>
